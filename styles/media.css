@@ -1,0 +1,46 @@
+  @media screen and (max-width: 960px) {
+    .udemy-bus{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 770px) {
+    .search-bar,
+    .sign-up-button,
+    .teach-on,
+    .log-in-button,
+    .lang-button ,
+    .shopping-cart-icon,
+    .udemy-bus,
+    .cato  {
+      display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu,.search-icon1{
+        display: flex;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .course-cato {
+      display: none;
+    }
+  
+     .courses {
+      padding: 2rem;
+    }
+  }
+  @media screen and (max-width: 900px) {  
+    .header {
+      justify-content: center;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  
+    .header .header-txt {
+      box-shadow: 0 0;
+      width: 100%;
+      margin-top: 0px;
+    }
+  }
