@@ -33,7 +33,7 @@
     padding: 2rem;
   }
 }
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
   .header {
     justify-content: center;
     flex-direction: column-reverse;
@@ -42,7 +42,21 @@
 
   .header .header-txt {
     box-shadow: 0 0;
-    width: 100%;
-    margin-top: 0px;
+    margin-top: 10px;
+  }
+} */
+@media screen and (max-width: 700px) {
+  .header-background {
+    background-position: 80% center;
+  }
+
+  .header-txt {
+    position: static;
+    box-shadow: none;
+    width: initial;
+    padding-bottom: 0;
+  }
+  .course-cato-txt {
+    margin-top: 150px;
   }
 }
