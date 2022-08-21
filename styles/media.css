@@ -33,18 +33,6 @@
     padding: 2rem;
   }
 }
-/* @media screen and (max-width: 900px) {
-  .header {
-    justify-content: center;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .header .header-txt {
-    box-shadow: 0 0;
-    margin-top: 10px;
-  }
-} */
 @media screen and (max-width: 700px) {
   .header-background {
     background-position: 80% center;
@@ -58,5 +46,21 @@
   }
   .course-cato-txt {
     margin-top: 150px;
+  }
+  .course-cato-txt {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .list-item-first,
+  .list-item {
+    padding-left: 10px;
+  }
+  .courses {
+    margin: 10px;
+    padding: 0;
+  }
+  .course-box-title,
+  .course-box-txt {
+    width: 265px;
   }
 }

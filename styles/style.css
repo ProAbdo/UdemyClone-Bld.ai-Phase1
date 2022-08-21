@@ -15,10 +15,6 @@ body {
   display: none;
   width: 24px;
 }
-
-ul {
-  padding: 0;
-}
 li {
   font-size: 12px;
   font-weight: 700;
@@ -40,6 +36,7 @@ li {
 }
 .header-background {
   background: url("../icons/alarm.jpg");
+  margin-top: 2px;
   background-position: center;
   background-size: cover;
   min-height: 300px;
@@ -174,19 +171,16 @@ li {
   flex-wrap: wrap;
   padding: 0;
 }
-.courses-list-cato .list-item,
+.list-item,
 .list-item-first {
   font-weight: bold;
   color: grey;
   padding-left: 60px;
+  line-height: 20px;
+  cursor: pointer;
 }
 .list-item-first {
   color: black;
-  cursor: pointer;
-}
-.list-item {
-  padding-left: 15px;
-  cursor: pointer;
 }
 .list-item-first:hover,
 .list-item:hover {
@@ -221,7 +215,7 @@ li {
 .explore-button {
   font-weight: bold;
   padding: 10px;
-  margin-left: 25px;
+  margin-left: 20px;
   margin-top: 10px;
   margin-bottom: 30px;
   cursor: pointer;
