@@ -1,7 +1,7 @@
 let parent = document.querySelector(".courses_preview");
 let courses_data = [];
 function Fetch() {
-  fetch("https://proabdo.github.io/UdemyClone-Bld.ai-Phase1/db.json")
+  fetch("https://proabdo.github.io/UdemyClone-Bld.ai-Phase2/db.json")
     .then((res) => res.json())
     .then((data) => {
       let coursesData = data.courses_list;
