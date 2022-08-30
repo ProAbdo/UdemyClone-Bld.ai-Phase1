@@ -83,7 +83,7 @@ function CreateCard(card) {
 }
 
 window.onload = async () => {
-  await fetch();
+  await Fetch();
   const objs = [...python[0].python];
   CreateCard(objs);
 };
