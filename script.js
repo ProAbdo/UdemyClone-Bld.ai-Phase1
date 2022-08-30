@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const pythonBtn = document.querySelector(".python-courses-btn");
 const excelBtn = document.querySelector(".excel-courses-btn");
 const webBtn = document.querySelector(".web-courses-btn");
@@ -23,6 +24,20 @@ async function FETCH() {
   aws.push(data[5]);
   Drawing.push(data[6]);
   return true;
+=======
+let parent = document.querySelector(".courses_preview");
+let courses_data = [];
+function Fetch() {
+  fetch("https://proabdo.github.io/UdemyClone-Bld.ai-Phase2/db.json")
+    .then((res) => res.json())
+    .then((data) => {
+      let coursesData = data.courses_list;
+      coursesData.forEach((course) => {
+        parent.append(Show(course));
+        courses_data.push({ id: course.id, title: course.title });
+      });
+    });
+>>>>>>> ca20cf3a02afbd6e26d7ec9e310cc78fd2280b18
 }
 
 function CreateCard(card) {
