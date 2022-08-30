@@ -23,8 +23,6 @@ async function FETCH() {
   aws.push(data[5]);
   Drawing.push(data[6]);
   return true;
-  let parent = document.querySelector(".courses_preview");
-  let courses_data = [];
 }
 function Fetch() {
   fetch("https://proabdo.github.io/UdemyClone-Bld.ai-Project1/db.json")
