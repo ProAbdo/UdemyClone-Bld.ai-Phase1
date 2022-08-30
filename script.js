@@ -12,8 +12,10 @@ let python = [],
 let Data_sci = [],
   Drawing = [],
   Web_dev = [];
-async function FETCH() {
-  const res = await fetch("db.json");
+async function Fetch() {
+  const res = await fetch(
+    "https://proabdo.github.io/UdemyClone-Bld.ai-Project1/db.json"
+  );
   const data = await res.json();
   python.push(data[0]);
   Excel.push(data[1]);
@@ -24,18 +26,6 @@ async function FETCH() {
   Drawing.push(data[6]);
   return true;
 }
-function Fetch() {
-  fetch("https://proabdo.github.io/UdemyClone-Bld.ai-Project1/db.json")
-    .then((res) => res.json())
-    .then((data) => {
-      let coursesData = data.courses_list;
-      coursesData.forEach((course) => {
-        parent.append(Show(course));
-        courses_data.push({ id: course.id, title: course.title });
-      });
-    });
-}
-
 function CreateCard(card) {
   let items_container1 = document.querySelector(".items-container.one");
   let items_container2 = document.querySelector(".items-container.two");
@@ -93,7 +83,7 @@ function CreateCard(card) {
 }
 
 window.onload = async () => {
-  await FETCH();
+  await fetch();
   const objs = [...python[0].python];
   CreateCard(objs);
 };
